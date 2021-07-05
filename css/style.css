@@ -1,0 +1,392 @@
+
+  * {
+   
+    box-sizing: border-box;
+   } 
+
+   body{
+    background-color: hsl(218,28%,13%); 
+    color: hsl(0,0%,100%);
+    font-family: 'Open Sans',  sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      }  
+ 
+  h1,h2,h3,button,a {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+  }
+
+     /* main layout */
+ 
+   .main_layout {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       max-width: 100%;
+       width: 100%;
+       min-width: 100%;
+      
+   }
+
+    /* header */
+   
+    .main_header{ 
+        background-color: hsl(217,28%,15%); 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        padding-top: 3.25rem;
+        padding-bottom: 3.5rem;   
+               }
+    .spacing{
+    padding-top: 3.25rem;
+           }
+    .logo_area{
+        margin-left: 3.25vw;
+            }
+    .nav_bar {
+        height: 3.25rem;
+        margin-right: 3.25vw;
+        align-content: center;
+            }
+    .nav_bar ul{
+        display: flex;
+        gap: 3.2vw;
+           }
+     li {
+            list-style-type: none;
+        } 
+    .nav_bar ul>li{
+        flex-shrink: 0;
+    }
+    a {
+    color: hsl(0,0%,100%);
+    text-decoration: none; 
+      } 
+      a:hover{
+         color: hsl(176,68%,64%);
+         transition: 700ms;
+      }
+
+  /* intro */
+
+  .intro  {
+    background-color: hsl(217,28%,15%);
+           }
+  .illustration_txt{
+    margin-top: 3.125rem;
+    background-image: url(../images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 27.5rem;
+}
+  .button {
+    background: linear-gradient(90deg, hsl(176,68%,64%),hsl(198,60%,50%));
+    color: hsl(0,0%,100%);
+    cursor: pointer;
+    width: 16.875rem;
+    height: 3.436rem;
+    border-radius: 25px; 
+    border: none;
+         }
+   .button:hover{
+       background:linear-gradient(145deg,hsl(198,60%,50%),hsl(176,68%,64%) );
+
+   }
+
+   /* services section */
+   
+    .services_box {
+        max-width: 95%;
+        width:25rem ;
+        padding: 1.25rem;
+        }
+    .offers {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 2.5rem;
+        justify-content: space-evenly;
+        margin: 1.875rem;
+    }
+ 
+    /* goals */
+    .productive {
+        max-width: 90%;
+        width: 31.25rem;
+        padding: 0.625rem;
+        align-self: center;
+    } 
+     .arrow{
+         width: 15px;  
+          }
+     .empty_paragraph::after{
+         content: url(../images/icon-arrow.svg);
+          }
+     .arrow_link{
+        border-bottom: 1px solid hsl(176,68%,64%) ;
+          }
+     .arrow_link:hover{
+            border-bottom: 1px solid hsl(198,60%,50%) ;
+              }
+     .arrow_div {
+         display: flex;
+         justify-content: flex-start;
+               }
+     .arrow_space{
+        padding-right: 5px;
+     }
+     .arrow_link a{
+         color:hsl(176,68%,64%);
+     }
+     .arrow_link a:hover{
+         color: hsl(198,60%,50%);
+     }
+     .stay_productive {
+        display: flex;
+        justify-content: center;
+        gap: 3.125rem;
+        text-align: left;   
+     }
+
+   /* Testimonial section */
+
+   .testimonial_box{
+    background-color: hsl(219,30%,18%);
+    max-width: 98%;
+    width: 25%;
+    height: 25%;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px  hsl(218,28%,13%), -2px -2px 5px hsl(218,28%,13%); 
+                 }
+   .quote{
+    position: relative; 
+    bottom: 7.5rem;
+     left:7.5rem ;
+      z-index: -1;
+         }
+
+    .testimonials{
+        text-align: left;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+            }
+
+    .testimonial_box img {
+        width: 30px;
+        border-radius: 100%;
+        margin-top: 15px;
+         }
+    .mini{
+        display: flex;
+        gap: 5px;
+        line-height: 17px;
+          }
+
+  /* sign up section */
+
+  .sign_up{
+    background-color: hsl(217,28%,15%);
+    width: 48rem;
+    height: 18.75rem;
+    border-radius: 10px;
+    position: relative;
+    margin: auto;
+    top: 7.5rem; 
+    box-shadow: 2px 2px 5px  hsl(218,28%,13%), -2px -2px 5px hsl(218,28%,13%); 
+          }
+
+   .sign_up input {
+        width: 28.125rem;
+        height: 55px;
+        border-radius: 25px;
+        padding-left: 1.25rem;
+        border: none;
+        outline: none;
+        }
+    #get_access{
+        margin: 40px auto;
+        width: 37.5rem;
+              }
+   .sign_up form {
+        display: flex;
+        justify-content: space-evenly;
+        }
+
+  /* footer section */
+
+    .icon {
+        margin-right: 1.25rem;
+    }
+    .footer li{
+        margin-bottom: 15px;
+    }
+    .social_icons {
+        display: flex;
+        gap: 2.5rem;
+        justify-content: center;
+     
+    }
+    .social_icons_border{
+        border: 2px solid hsl(0,0%,100%);
+        border-radius: 100%;
+        padding: 10px; 
+    }
+    .social_icons_border:hover{
+        border-color: hsl(176,68%,64%);
+      
+    }
+    .facebook_icon_padding{
+             padding-left: 15px;
+             padding-right: 15px;
+    }
+    .ig_icon_padding{
+        padding-left: 12px;
+        padding-right: 12px;
+}
+    footer {
+        background-color: hsl(216,53%,9%); 
+        padding-top: 6.25rem;
+        min-width: 90%;
+
+    }
+
+    .footer{
+        text-align: left;
+        display: flex;
+        justify-content: space-evenly;
+        height: 30%;    
+       
+    }
+    #footer_location{
+    display: flex;
+    }
+    #footer_location img{
+    margin-right: 20px;
+    }
+    #fylo_logo_footer{
+        text-align: left;
+        padding-left: 4.2rem;
+        margin-top: 1.875rem;
+    }
+    .footer_item{
+        margin-top: 10px;
+        width: 17.5rem;
+              } 
+   .responsive_img{
+       max-width: 85%;
+       height: auto;
+   } 
+
+      /* medium devices responsive*/
+      @media (max-width:800px) {
+        .main_layout {
+           flex-direction: column;    
+                    }
+            .logo{
+                width: 7rem;
+                height: auto;
+            }
+        .offers {
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto;
+            gap: 40px;
+            justify-content: center;
+            max-width: 98%;
+        }
+        .stay_productive {
+            flex-direction: column;
+        }
+        .sign_up{
+            width: 80%;
+            height: auto;
+            top: 40px; 
+        }
+        .sign_up form {
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 2.5rem;
+        }
+        #get_access{
+            width: 80%;
+        }
+        .sign_up input, form .button {
+            margin: 15px;
+            width: 80%;
+        }
+ 
+        .testimonials{
+           
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        
+        }
+        .quote{
+            bottom: -2.125rem;
+             left:-16.125rem ;
+        }
+        .testimonial_box{
+            width: 85%;
+            height: 250px;
+        }
+    
+         #fylo_logo_footer{
+           padding-left: 40px;
+           margin-top: 6.25rem;
+             }
+        .footer{
+            flex-direction: column;
+        }
+        .social_icons{
+            justify-content: center;
+        }
+        .footer_item{
+            margin-top: 10px;
+            width: 80%;
+            
+                  }
+      }
+
+
+    /* Small devices responsive */
+
+ @media (max-width:375px) {     /*mobile */ 
+    .logo{
+        width: 6rem;
+        height: auto;
+    }
+    .illustration_txt{
+        margin-top: 30px;
+        background-image: url(../images/bg-curvy-mobile.svg);
+        background-repeat: no-repeat;
+       }
+    .productive{
+    width: 17.75rem;
+     }
+    .sign_up{
+        top: 70px; 
+    }
+   .sign_up form {
+        justify-content: space-around;
+        padding-left: 0;
+    }
+    .sign_up input, form .button{
+      width: 240px;
+    }
+    .quote{
+        left: -125px;
+     }
+     #fylo_logo_footer{
+       margin-top: 100px;
+   }
+
+} 
