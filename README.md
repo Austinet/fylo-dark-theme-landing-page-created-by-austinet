@@ -49,8 +49,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live Site](http://austinet.github.io/fylo-dark-theme-landing-page-created-by-austinet)
+- Solution URL: [GitHub repository](https://GitHub.com/Austinet/fylo-dark-theme-landing-page-by-austinet.git)
+- Live Site URL: [Live Site](https://austinet.github.io/fylo-dark-theme-landing-page-created-by-austinet)
 
 ## My process
 
